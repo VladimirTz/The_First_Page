@@ -1,0 +1,122 @@
+/* It's for all elements on the page */
+* {
+
+}
+
+/* For tag body */
+body {
+  color: #0f141e;
+  background: #aaa;
+}
+
+/* Class Card */
+.card {
+  padding: 10px 25px;
+  background: #ddd;
+  margin-bottom: 10px;
+  border-radius: 30px;
+}
+
+.container {
+  max-width: 750px;
+  margin: auto;
+}
+
+.info {
+  margin-bottom: 20px;
+  display: flex; /* Перенос блоков в одну линию  */
+}
+
+@media (max-width: 855px) {
+  .info {
+    display: block;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.avatar {
+  width: 200px;
+  border-radius: 28px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3); /*Тени к картинке*/
+}
+
+.card ul  {
+  font-size: 14px;
+}
+
+.card tr {
+  font-size: 14px;
+}
+
+.hobbies {
+  color: #0f141e;
+}
+
+.Work {
+  color: #0f141e;
+}
+
+/* ID */
+#my_name {
+  background: #aaa;
+  /* padding:  10px 10px 10px 0px; */
+}
+
+.contact, .hobbies, .Work {
+  border: 3px solid #ccc;
+}
+
+.form h4 {
+  text-align: center;
+}
+
+.form-row {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.form-row .form-group {
+  display: inline-block;
+  margin-right: 20px;
+  /* width: 46%; чтобы вместить поле Name и Email в одну строчку*/
+  width: 50%;
+  /* width: calc(50% - 20px); чтобы вместить поле Name и Email в одну строчку*/
+
+}
+
+.form-row .form-group:last-child{
+  margin-right: 0; /* убираем правый отступ Email чтобы вместить поле Name и Email в одну строчку*/
+  
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #0f141e;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: none; /*убираем рамку с полей ввода*/
+  background: transparent; /*убираем фон с полей ввода(поле ввода)*/
+  border-bottom: 1px solid #ccc;
+  color: #0f141e;
+  padding: 15px 0 10px;
+  outline: none; /*убираем рамку с полей ввода*/
+  font-family: inherit;
+}
+
+@media (max-width: 650px) {
+  .form-row {
+    display: block;
+  }
+
+  .form-row .form-group {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

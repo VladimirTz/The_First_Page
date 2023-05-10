@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="first, html, file">
+  <meta name="description" content=" This is my first html file">
+  <title>My first page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="foonts.css">
+  <link rel="stylesheet" href="color.css">
+  <link rel="stylesheet" href="borders.css">
+  <link rel="stylesheet" href="link.css">
+  <link rel="stylesheet" href="list_tible.css">
+  <link rel="stylesheet" href="display.css">
+  <link rel="stylesheet" href="positions.css">
+</head>
+<body>
+
+  <!-- <nav class="navbar">
+    <ul>
+      <il><a href="#">menu1</a></il>
+      <il><a href="#">menu2</a></il>
+      <il><a href="#">menu3</a></il>
+      <il><a href="#">menu4</a></il>
+    </ul>
+  </nav> -->
+
+  <div class="container">
+    <div class="info">
+      <img src="cv.jpg" alt="It's the page with popcorn here" class="avatar">
+
+      <div class="info-text">
+        <h2 id="my_name">Uladimir Tsalabanau</h2>
+
+        <p>My name is Vladimir. I'm twenty-seven years old. I'm an Engineer. I like to <strong>travel</strong> and <strong>read</strong> books. <strong><em>I want to study something new.</em></strong></p>
+
+        <p>I think I will succeed.</p>
+
+        <h4>List of social networks</h4>
+
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a> 
+        | 
+        <a href="https://telegram.org/" target="_blank">Telegram</a> 
+        | 
+        <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+      </div>
+    </div>
+
+    <div class="card hobbies">
+      <h4>My hobbies</h4>
+      <ul class="list_h">
+        <li>Read books:
+          <ol>
+            <li>Martin Eden;</li>
+            <li>Mysterious Island;</li>
+            <li>Count of Montecristo.</li>
+          </ol>
+        </li>
+        <li>Play football;</li>
+        <li>Trevel;</li>
+        <li>Play chess;</li>
+        <li>Listen to music:
+          <ol>
+            <li>Bullet for my valentine;</li>
+            <li>4 April;</li>
+            <li>Max Korzh.</li>
+          </ol>
+        </li>
+      </ul>
+    </div>
+
+    <div class="card Work">
+      <h4>Work experience</h4>
+      <table class="table">
+        <!-- <thead>
+          <tr>
+            <th>Place of Work</th>
+            <th>Post</th>
+            <th>How long</th>
+          </tr>
+        </thead> -->
+        <tbody>
+          <tr>
+            <td>Minsk cable networks</td>
+            <td>Engineer</td>
+            <td>2017 - 2019 y.</td>
+          </tr>
+          <tr>
+            <td>Minsk cable networks</td>
+            <td>Master</td>
+            <td>2019 - 2022 y.</td>
+          </tr>
+          <tr>
+            <td>ITX</td>
+            <td>QA Treine</td>
+            <td>2022 - now y.</td>
+          </tr>
+        </tbody>
+        <!-- <tfoot>
+          if you need to add a footer for a table
+        </tfoot> -->
+      </table>
+    </div>
+
+    <div class="card contact">
+      <form class="form">
+        <h4>Contact Me</h4>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" placeholder="Enter a name" minlength="2" maxlength="25">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" placeholder="Enter your Email" minlength="2" maxlength="25">
+          </div>
+        </div>
+
+        <!-- <div class="form-group">
+          <label for="password">Your Password:</label>
+          <input type="password" id="password" placeholder="Enter the password" minlength="2" maxlength="15">
+        </div>
+
+        <div>
+          <label for="sex">Choose your gender:</label>
+          <select id="sex">
+            <option value="male">man</option>
+            <option value="female">woman</option>
+            <option value="other" selected>other</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="status">Your Status:</label>
+          <input type="radio" name="status">student
+          <input type="radio" name="status">working
+          <input type="radio" name="status">unemployed
+        </div>
+
+        <div>
+          <label for="device">Your Device(s):</label>
+          <input type="checkbox" name="device">iphone
+          <input type="checkbox" name="device">android
+          <input type="checkbox" name="device">dekstop
+        </div> -->
+
+        <div class="form-group">
+          <label for="massage">Your massage:</label><br>
+          <textarea id="massage" cols="32" rows="5" placeholder="Enter a massege" min="2" max="100"></textarea>
+        </div>
+
+        <!-- <input type="submit" value="Submit"> -->
+        <button class="btn">Submit</button>
+
+      </form>
+    </div>
+
+    <!-- <div class="card color">
+      <h3>Color</h3>
+      <h4 class="color1"> Color 1</h4>
+      <h4 class="color2"> Color 2</h4>
+      <h4 class="color3"> Color 3</h4>
+      <h4 class="color4"> Color 4</h4>
+      <h4 class="color5"> Color 5</h4>
+    </div>
+    <div class="card borders">
+      <h3>Borders</h3>
+      <p class="border1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quas provident laborum ea dicta soluta beatae. Ea excepturi adipisci harum recusandae, exercitationem suscipit pariatur sint soluta optio laborum atque similique.</p>
+      <p class="border2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quas provident laborum ea dicta soluta beatae. Ea excepturi adipisci harum recusandae, exercitationem suscipit pariatur sint soluta optio laborum atque similique.</p>
+      <p class="border3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quas provident laborum ea dicta soluta beatae. Ea excepturi adipisci harum recusandae, exercitationem suscipit pariatur sint soluta optio laborum atque similique.</p>
+    </div>
+
+    <div class="card">
+      <h3>Display</h3>
+
+      <ul class="inline">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+      </ul>
+
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsa.
+      </div>
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsa.
+      </div>
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsa.
+      </div>
+
+      <img src="4_1.png" alt="p" class="pam">
+
+    </div>
+    <div class="card">
+      <h3>Positions</h3>
+
+      <div class="playground">
+        <div class="pos-box"></div>
+      </div>
+    
+
+    </div> -->
+  </div>
+</body>
+</html>

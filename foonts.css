@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); /*так можно импортировать шрифты из инета, например из google*/
+
+body {
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; ------Задаем несколько шрифтов, если шрифт Verdana не поддерживается браузером, код перейдет к следующему шрифту и так далее. Если все шрифты не поддерживаються, то нужно указать  sans-serif чтобы браузер выбрал те шрифты которые у него есть. */
+  font-family: Roboto, sans-serif; /*но нужно этот шрифт импортируемый(Roboto) все равно указать здесь*/
+  font-size: 16px; /*размер шрифта текста*/
+  line-height: 1.4em; /*высота линий*/
+  font-weight: normal; /*это манипуляции с текстом, можно делать его жирным(bold), также можно использовать числа(400- normal; bold-900*/
+  /* text-decoration: line-through(зачеркнутый текст), underline(подчеркнутый текс) и т.д; */
+  /* font-style: italic; наклоны текста и т.д. */
+  /* letter-spacing: 2px; расстояние между символами */
+  /* word-spacing: 2px; расстояние между словами */
+  /* font: normal 20px Roboto, sans-serif; можно объеденять несколько значений weight, size, family в одно как здесь ; */
+  
+}
+
+.info-text {
+  margin-left: 40px;
+}
+
+.info-text p {
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.info-text h4 {
+  margin-bottom: 10px;
+}

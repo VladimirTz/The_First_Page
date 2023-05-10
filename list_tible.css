@@ -1,0 +1,22 @@
+.list_h {
+  padding: 0 20px;
+}
+
+.list_h li {
+  color: #0f141e;
+  margin-bottom: 10px;
+  /* list-style: none;  Уберает точки и цифры из списка*/
+  /* border-bottom: 2px solid blue; */
+}
+
+.table {
+  width: 100%;
+  padding-bottom: 10px;
+  /* :first-child, :last-child и: nth-child (n)
+Эти псевдоклассы выбирают элемент по его порядковому номеру. :first-child соответствует первому дочернему элементу родителя, :last-child — последнему. А псевдокласс :nth-child(n) указывает на n-й дочерний элемент. Например, с его помощью можно выбрать второй, пятый или предпоследний элемент. Вместо n в скобках указывается целое число или математическое выражение. */
+}
+
+.table td:nth-child(2),
+.table td:nth-child(3) {
+  color: #808aa0;
+}

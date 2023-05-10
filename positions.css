@@ -1,0 +1,33 @@
+.playground {
+  position: relative;   /* Позиционирование относительно родителя. 2 значения: absolute, relative */
+  border: 4px solid black;
+  height: 300px;
+  padding: 20px;
+}
+
+.pos-box {
+  /* position: static;  По учолчанию все элементы в этой позиции и родители учитывают дочерние элементы*/
+  position: absolute; /*Можно использовать когда мы хотим разместить элемент независимо от родительских или других элементов. Можно использовать такие left, top, right, bottom. Связан со строкой 2(position: relative;)*/
+  top: 0;
+  left: 0;
+  /*position: fixed; Элемент в не зависимости от родителя птзиционируется относительно нашего экрана */
+  width: 50px;
+  height: 50px;
+  background: blue;
+}
+
+.navbar {
+  border: 1px solid black;
+  background: rgb(156, 65, 65);
+  display: inline-block;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;  /*Показывает на сколько слоев вверх смотрит элемент */
+}
+
+.container {
+  margin-top: 60px;
+}

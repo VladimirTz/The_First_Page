@@ -1,0 +1,23 @@
+.border1 {
+  /* border-width: 3px;
+  border-style: solid(dashed);
+  border-color: #acd; */
+  border: 3px solid #abc; /*можно задавать в одну строчку 3 параметра*/
+  border-radius: 5px; /*радиус в px или %*/
+}
+
+/*можно задавать границы элементов отдельно: bottom, top, right, left*/
+.border2 {
+  border-bottom: 5px solid #acd;
+  border-top: 1px solid red;
+  border-left: 2px solid blue;
+  border-right: 3px solid green;
+  border-top-right-radius: 30px;
+}
+
+.border3 {
+  border-left: 10px solid red;
+  background: pink;
+  padding-left: 10px;
+  color: #074e1c;
+}

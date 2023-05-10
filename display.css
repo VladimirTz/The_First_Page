@@ -1,0 +1,41 @@
+/* inline, block, inline-block */
+/*inline элементам(ссылки, картинки) нельзя задать margine, а блочным элементам можно, поэтому и межно переопределять значения элементов   */
+
+.inline li {
+  /*display: flex; Делает элементы в одну линию, но есть свои мигусы и плюсы */
+  display: inline; /* Перезадаем стиль, по умолчанию он block от блаузера задается, а мы меняем на inline. Делает из блочных эдементов линейные */
+
+}
+
+.box {
+  width: 33%;
+  border: 1px solid black;
+  background: red;
+  display: inline-block;  /* Помогает выстраить блочные элементы в линию, но они пока все равно еще блоки */
+  box-sizing: border-box;  /* Помогает выстраиты элементы в линию по ширине страницы*/
+}
+
+@media (max-width: 855px) {
+  .box {
+    width: 100%;
+    border: 1px solid black;
+    background: red;
+    display: block;
+    box-sizing: border-box;
+  }
+}
+/* @media (max-widht: 855px) помогает адоптировать верстку под любой размер сайта */
+
+.pam {
+  width: 300px;
+  display: block; /* Без него нльзя задать margin элемент должен быть блочный*/
+  margin: 40px auto;
+}
+
+@media (max-width: 855px) {
+  .pam {
+    width: 200px;
+    display: block; /* Без него нльзя задать margin элемент должен быть блочный*/
+    margin: 40px auto;
+  }
+}
